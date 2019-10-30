@@ -3,14 +3,20 @@ Discord bot that supplies information on game tournaments hosted on Smash.gg, su
 
 ## Installation
 Requires Python3.
+
 `pip install -r requirements.txt`.
 
-Must also acquire both a Smash.gg and a Discord API Token. See:
+Must also acquire both a Smash.gg and a Discord API Token. 
+
+See:
 https://discordpy.readthedocs.io/en/latest/discord.html
+
 https://developer.smash.gg/docs/authentication
 
 Store these in a .env file in the form of:
+
 SMASHGG_API_KEY = smashggKey
+
 DISCORD_API_KEY = discordKey
 
 The bot was created as a Discord Cog, so it should be able to be added onto to any other Discord bot that can add cogs. Just add your Smash.gg API Key and everything in the Cogs/Gigi/ folder. Main.py is configured to only accept Gigi as a Cog, and thus is not necessary when adding onto an existing bot that can already add multiple cogs.
@@ -25,5 +31,6 @@ The main purpose of the bot is to keep track of players in a tournament hosted o
 Additional functions come in the form of letting users check for a player's most recently played sets, the games they are entered in along with the corresponding Smash.gg pages, the tournament's stream queue, a multistream link for all of a tournament's streams, and more.
 
 ## Commands
-
+* Playerinfo
+  ** Get the Smash.gg pages for every game the specified plaer is enetered in.
 ![Imgur](https://i.imgur.com/Z4TffVD.png)
