@@ -30,7 +30,18 @@ The main purpose of the bot is to keep track of players in a tournament hosted o
 
 Additional functions come in the form of letting users check for a player's most recently played sets, the games they are entered in along with the corresponding Smash.gg pages, the tournament's stream queue, a multistream link for all of a tournament's streams, and more.
 
-## Commands
-* Playerinfo
-  ** Get the Smash.gg pages for every game the specified plaer is enetered in.
+## Information Commands
+* **Player Info**
+ * Get the Smash.gg pages for every game the specified plaer is enetered in.
+* **Recent Sets**
+ * A player's most recent sets. Gives the names of all players, the score, and the tournament round and name.
+* **Brackets**
+ * List of brackets for the specified tournament.
+* **Streams**
+ * List of streams for the specified tournament.
+* **Multistream**
+ * Provies a multistre.am link for all a tournament's streams. Only works for Twitch.tv streams.
+* **Streamqueue**
+ * Get a tournament's stream queue giving the (supposed) order of upcoming stream matches.
+
 ![Imgur](https://i.imgur.com/Z4TffVD.png)
