@@ -1,5 +1,0 @@
-discord==1.0.1
-discord.py==1.2.3
-graphqlclient==0.2.4
-python-dotenv==0.10.3
-requests==2.22.0
