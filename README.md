@@ -9,9 +9,7 @@ Requires Python3.
 Must also acquire both a Smash.gg and a Discord API Token. 
 
 See:
-https://discordpy.readthedocs.io/en/latest/discord.html
-
-https://developer.smash.gg/docs/authentication
+https://discordpy.readthedocs.io/en/latest/discord.html and https://developer.smash.gg/docs/authentication
 
 Store these in a .env file in the form of:
 
@@ -43,5 +41,41 @@ Additional functions come in the form of letting users check for a player's most
   * Provies a multistre.am link for all a tournament's streams. Only works for Twitch.tv streams.
 * **Streamqueue**
   * Get a tournament's stream queue giving the (supposed) order of upcoming stream matches.
+
+## List Commands
+* **Player List**
+  * Prints out what players are being watched.
+* **Add**
+  * Add player @ tournament combination to the list to be watched. Adds whoever invoked the command to that player's alert list.
+* **Delete**
+  * Delete player @tournament combination from the list.
+* **Delete Tourny**
+  * Delete all instances of a specific tournament from the list.
+* **Splitter**
+  * Change the symbol used to separate the player and tournament names in certain commands. The default is ,
+* **My Alerts**
+  * Alert lists you're on. Bot will message you when these players are about to come on stream.
+* **Alert Me**
+  * Be alerted when player is the 1st/2nd in the stream queue, or on stream.
+* **Alert Off**
+  * Takes you off one player or all player's alert lists.
+  
+## Admin/Owner Commands
+* **Reload**
+  * Reload GigiCog. ADMIN ONLY.
+* **Reload List**
+  * In case something goes wrong and lists need to be reloaded. ADMIN ONLY.
+* **Clear List**
+  * Clear this server's list of all players. ADMIN ONLY.
+* **Enable/Disable Posting**
+  * Allows/Disallows bot to post in current channel. ADMIN ONLY. MUST ENABLE IN AT LEAST ONE CHANNEL TO USE THE BOT.
+* **Show Channels**
+  * Channels Gigi is allowed to post in. ADMIN ONLY.
+* **Block/Unblock**
+  * Block/Unblock user from running commands on the bot. ADMIN ONLY.
+* **Block List**
+  * Show the block list. ADMIN ONLY.
+* **Start/Stop Queue**
+  * Restarts/Stops the auto_queue task that watches for players in the stream queue. ADMIN ONLY.
 
 ![Imgur](https://i.imgur.com/Z4TffVD.png)
