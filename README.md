@@ -11,7 +11,9 @@ Must also acquire both a Smash.gg and a Discord API Token.
 See:
 https://discordpy.readthedocs.io/en/latest/discord.html and https://developer.smash.gg/docs/authentication
 
-Store these in a .env file in the form of:
+I cannot guarantee that the Smash.gg devs will grant you an API Token if just link this repo as your reasoning for requesting a key, but it does not hurt to try.
+
+Store these tokens in a .env file in the form of:
 
 SMASHGG_API_KEY = smashggKey
 
