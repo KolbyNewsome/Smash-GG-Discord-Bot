@@ -453,7 +453,6 @@ class GigiCog(commands.Cog):
             query = Queries.playerQuery
             result = self.client.execute(query, input)
             data = json.loads(result)
-            print(data)
             validation = DataValidation.tourny_validate_data(data)
             if validation != "Valid":
                 await ctx.send(validation)
