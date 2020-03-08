@@ -11,8 +11,10 @@ query PlayerQuery($slug: String, $gamerTag: String) {
       }
     }){
       nodes{
+        player{
+          id
+        }
         gamerTag
-        playerId
         id
         entrants {
           id
