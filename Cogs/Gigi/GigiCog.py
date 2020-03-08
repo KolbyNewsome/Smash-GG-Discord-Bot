@@ -258,7 +258,7 @@ class GigiCog(commands.Cog):
         tournySlug = parse[1]
         playerList = self.get_list(ctx)
         player = playerList.get_player(gamerTag, tournySlug)
-        if player is False:
+        if type(player) is str:
             await ctx.send("{0} is not in the list under {1}. Add them first.".format(gamerTag, tournySlug))
             return
         
@@ -453,6 +453,7 @@ class GigiCog(commands.Cog):
             query = Queries.playerQuery
             result = self.client.execute(query, input)
             data = json.loads(result)
+            print(data)
             validation = DataValidation.tourny_validate_data(data)
             if validation != "Valid":
                 await ctx.send(validation)
@@ -461,7 +462,7 @@ class GigiCog(commands.Cog):
             #Create player object and add to the appropriate list; update json file
             try:
                 realTag = data["data"]["tournament"]["participants"]["nodes"][0]["gamerTag"]
-                playerId = data["data"]["tournament"]["participants"]["nodes"][0]["playerId"]
+                playerId = data["data"]["tournament"]["participants"]["nodes"][0]["player"]["id"]
                 attendeeId = data["data"]["tournament"]["participants"]["nodes"][0]["id"]
                 eventList = data["data"]["tournament"]["participants"]["nodes"][0]["entrants"]
                 gameList = {self.string_clean(eventList["event"]["name"]): eventList["id"] for eventList in eventList}
