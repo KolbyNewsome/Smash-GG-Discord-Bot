@@ -26,7 +26,9 @@ After adding the bot to a Discord server, run Main.py. Type !gigi for informatio
 
 The main purpose of the bot is to keep track of players in a tournament hosted on Smash.gg. The stream queue for the given tournaments are watched, and the bot will post a message in the Discord channel letting users know if a player is about to come on, or is already on a Twitch.tv / Mixer.com stream playing their match. Please be aware that not all tournaments keep track of their stream queue properly, and may not even utilize it at all.
 
-![Imgur](https://i.imgur.com/Zp2fzmv.png)
+![Imgur](https://i.imgur.com/2VlRhTS.png)
+![Imgur](https://i.imgur.com/o0aAt7W.png)
+![Imgur](https://i.imgur.com/bJyhKUe.png)
 
 Additional functions come in the form of letting users check for a player's most recently played sets, the games they are entered in along with the corresponding Smash.gg pages, the tournament's stream queue, a multistream link for all of a tournament's streams, and more.
 
@@ -80,4 +82,4 @@ Additional functions come in the form of letting users check for a player's most
 * **Start/Stop Queue**
   * Restarts/Stops the auto_queue task that watches for players in the stream queue. ADMIN ONLY.
 
-![Imgur](https://i.imgur.com/Z4TffVD.png)
+![Imgur](https://i.imgur.com/XXbkqTH.png)
